@@ -1,0 +1,10 @@
+
+ {
+    "type": "oracle",
+    "username": "HENRY.MATICURENA",
+    "password": "henry123",
+    "database": "AWS_DESA_PHANTOMX",
+    "connectString" : "52.7.160.244:2112/PRODUCCION",
+    "entities":  ["dist/Entity/**/*.js"],
+    "synchronize": false
+}
