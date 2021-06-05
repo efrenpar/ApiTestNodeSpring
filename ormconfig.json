@@ -1,10 +1,11 @@
 
  {
-    "type": "oracle",
-    "username": "HENRY.MATICURENA",
-    "password": "henry123",
-    "database": "AWS_DESA_PHANTOMX",
-    "connectString" : "52.7.160.244:2112/PRODUCCION",
+    "type": "postgres",
+    "url":"postgres://cnohpaikundjsn:c85fc5b3a1d06ac4772752210450674ba347d51a0224a417ac85c65b3a8ddcda@ec2-54-90-211-192.compute-1.amazonaws.com:5432/d6j4kmtqolhkjn",
     "entities":  ["dist/Entity/**/*.js"],
+    "logging": true,
+    "ssl": {
+        "rejectUnauthorized": false
+      },
     "synchronize": false
 }

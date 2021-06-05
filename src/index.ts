@@ -4,8 +4,7 @@ import morgan from 'morgan'
 import cors from 'cors'
 import {createConnection} from 'typeorm'
 
-import tiposComrpobante from './routes/tiposComprobante.routes'
-import  TiposIdentificaion from './routes/tiposIdentificacion.routes';
+import participantes from "./routes/participantes.routes";
 
 const app = express()
 createConnection();
@@ -17,8 +16,9 @@ app.use(express.json());
 
 
 //routes
-app.use(tiposComrpobante);
-app.use(TiposIdentificaion);
+//app.use(tiposComrpobante);
+//app.use(TiposIdentificaion);
+app.use(participantes);
 
 
 
